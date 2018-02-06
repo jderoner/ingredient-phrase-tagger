@@ -4,3 +4,4 @@ tmp/*
 log/*
 dist/
 CRF++-0.58/
+ingredient_phrase_tagger.egg-info/
