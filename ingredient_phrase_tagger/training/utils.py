@@ -15,7 +15,7 @@ def tokenize(s):
     But we must split the text on "cups/" etc. in order to pick it up.
     """
 
-    american_units = ['cup', 'tablespoon', 'teaspoon', 'pound', 'ounce', 'quart', 'pint']
+    american_units = ['cup', 'tablespoon', 'teaspoon', 'pound', 'ounce', 'quart', 'pint' ]
     for unit in american_units:
         s = s.replace(unit + '/', unit + ' ')
         s = s.replace(unit + 's/', unit + 's ')

@@ -2,3 +2,5 @@
 build/
 tmp/*
 log/*
+dist/
+CRF++-0.58/
