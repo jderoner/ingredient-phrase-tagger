@@ -41,8 +41,6 @@ def parse_ingredients():
         input_file.close()
 
     os.system("crf_test -v 1 -m %s %s > %s" % (modelFilename, tmp_file, json_result_fname))
-    with open(json_result_fname, 'r') as tmp_read:
-        print( tmp_read.read() )
     os.remove(tmp_file)
     json_output = json.dumps(utils.import_data(open(json_result_fname)), indent=4)
     os.remove(json_result_fname)
